@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "router-store-tracker",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
