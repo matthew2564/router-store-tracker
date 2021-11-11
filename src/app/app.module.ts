@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CustomSerializer } from 'src/store/routing/router.serialiser';
 import { reducers } from 'src/store/store.reducer';
+import { ngrxRouterStoreNavigated } from 'src/store/routing/router.actions';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,9 @@ import { reducers } from 'src/store/store.reducer';
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: true,
+      actionsBlocklist: [
+        ...ngrxRouterStoreNavigated,
+      ],
     }),
     StoreRouterConnectingModule.forRoot({
       serializer: CustomSerializer,
