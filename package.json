@@ -1,7 +1,8 @@
 {
   "name": "router-store-tracker",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "matthew2564",
+  "description": "An Ionic and Angular project which creates a nav history similar to how the Ionic 3 nav stack worked using ngrx",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -25,6 +26,9 @@
     "@capacitor/keyboard": "1.1.3",
     "@capacitor/status-bar": "1.0.6",
     "@ionic/angular": "^5.5.2",
+    "@ngrx/router-store": "^12.5.1",
+    "@ngrx/store": "^12.5.1",
+    "@ngrx/store-devtools": "^12.5.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
@@ -61,6 +65,5 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "typescript": "~4.2.4"
-  },
-  "description": "An Ionic project"
+  }
 }
